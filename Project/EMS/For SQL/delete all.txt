@@ -1,0 +1,10 @@
+drop table event;
+drop table venue;
+drop table studio;
+drop table menu;
+drop table employeepass;
+drop table employee;
+drop table customerpass;
+drop table customer;
+drop table catering;
+drop table media_requirements;
