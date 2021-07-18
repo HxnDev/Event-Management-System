@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.venue_edit_Controller">
+   <content>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="132.0" layoutY="897.0" opacity="0.56" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@images/Manager_Edit_Venues.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="270.0" layoutY="-7.0" style="-fx-font-size: 120; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="EditVenues" textFill="WHITE" AnchorPane.topAnchor="-7.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <JFXButton fx:id="exit_btn" buttonType="RAISED" layoutX="840.0" layoutY="19.0" onAction="#handleExitButton" ripplerFill="#d0d0d0" text="X" textFill="WHITE" AnchorPane.topAnchor="20.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="162.0" layoutY="546.0" ripplerFill="#d0d0d0" text="Privacy Policy" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="310.0" layoutY="546.0" ripplerFill="#d0d0d0" text="Terms of Use" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="547.0" ripplerFill="#d0d0d0" text="About Us" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="535.0" layoutY="555.0" text="© 2020 All Rights Reserved" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <AnchorPane layoutX="101.0" layoutY="138.0" prefHeight="373.0" prefWidth="179.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="70.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="373.0" opacity="0.49" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="225.0" AnchorPane.leftAnchor="0.0" />
+                  <Label alignment="CENTER" layoutX="67.0" layoutY="14.0" opacity="0.72" prefHeight="17.0" prefWidth="91.0" style="-fx-background-color: white;" text="Venue" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="38.0" opacity="0.72" prefHeight="17.0" prefWidth="61.0" style="-fx-background-color: white;" text="Name" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="5.0" layoutY="222.0" opacity="0.72" prefHeight="17.0" prefWidth="66.0" style="-fx-background-color: white;" text="Category" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="83.0" opacity="0.72" prefHeight="17.0" prefWidth="61.0" style="-fx-background-color: white;" text="Location" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="6.0" layoutY="129.0" opacity="0.72" prefHeight="17.0" prefWidth="63.0" style="-fx-background-color: white;" text="Address" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="5.0" layoutY="176.0" opacity="0.72" prefHeight="17.0" prefWidth="66.0" style="-fx-background-color: white;" text="Capacity" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="6.0" layoutY="268.0" opacity="0.72" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: white;" text="Contact" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="3.0" layoutY="313.0" opacity="0.72" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: white;" text="Cost" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <JFXTextField fx:id="venue1_name" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="53.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Name" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue1_loc" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="100.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Location" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue1_addr" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="146.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Address" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue1_cap" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="192.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Capacity" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue1_cat" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="238.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Category" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue1_contact" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="283.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Contact" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue1_price" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="325.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Cost" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="338.0" layoutY="138.0" prefHeight="373.0" prefWidth="179.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="338.0" AnchorPane.rightAnchor="337.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="373.0" opacity="0.49" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="225.0" AnchorPane.leftAnchor="0.0" />
+                  <Label alignment="CENTER" layoutX="67.0" layoutY="14.0" opacity="0.72" prefHeight="17.0" prefWidth="91.0" style="-fx-background-color: white;" text="Venue" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="38.0" opacity="0.72" prefHeight="17.0" prefWidth="61.0" style="-fx-background-color: white;" text="Name" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="5.0" layoutY="222.0" opacity="0.72" prefHeight="17.0" prefWidth="66.0" style="-fx-background-color: white;" text="Category" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="83.0" opacity="0.72" prefHeight="17.0" prefWidth="61.0" style="-fx-background-color: white;" text="Location" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="6.0" layoutY="129.0" opacity="0.72" prefHeight="17.0" prefWidth="63.0" style="-fx-background-color: white;" text="Address" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="5.0" layoutY="176.0" opacity="0.72" prefHeight="17.0" prefWidth="66.0" style="-fx-background-color: white;" text="Capacity" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="6.0" layoutY="268.0" opacity="0.72" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: white;" text="Contact" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="3.0" layoutY="313.0" opacity="0.72" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: white;" text="Cost" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <JFXTextField fx:id="venue2_name" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="53.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Name" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue2_loc" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="100.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Location" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue2_addr" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="146.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Address" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue2_cap" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="192.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Capacity" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue2_cat" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="238.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Category" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue2_contact" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="283.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Contact" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue2_price" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="325.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Cost" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="615.0" layoutY="138.0" prefHeight="373.0" prefWidth="179.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="70.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="373.0" opacity="0.49" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="225.0" AnchorPane.leftAnchor="0.0" />
+                  <Label alignment="CENTER" layoutX="67.0" layoutY="14.0" opacity="0.72" prefHeight="17.0" prefWidth="91.0" style="-fx-background-color: white;" text="Venue" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="38.0" opacity="0.72" prefHeight="17.0" prefWidth="61.0" style="-fx-background-color: white;" text="Name" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="5.0" layoutY="222.0" opacity="0.72" prefHeight="17.0" prefWidth="66.0" style="-fx-background-color: white;" text="Category" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="83.0" opacity="0.72" prefHeight="17.0" prefWidth="61.0" style="-fx-background-color: white;" text="Location" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="6.0" layoutY="129.0" opacity="0.72" prefHeight="17.0" prefWidth="63.0" style="-fx-background-color: white;" text="Address" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="5.0" layoutY="176.0" opacity="0.72" prefHeight="17.0" prefWidth="66.0" style="-fx-background-color: white;" text="Capacity" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="6.0" layoutY="268.0" opacity="0.72" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: white;" text="Contact" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="3.0" layoutY="313.0" opacity="0.72" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: white;" text="Cost" textFill="#430000">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <JFXTextField fx:id="venue3_name" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="53.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Name" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue3_loc" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="100.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Location" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue3_addr" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="146.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Address" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue3_cap" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="192.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Capacity" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue3_cat" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="238.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Category" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue3_contact" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="283.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Contact" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="venue3_price" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="25.0" layoutY="325.0" pickOnBounds="false" prefHeight="25.0" prefWidth="180.0" promptText="Cost" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <effect>
+                        <DropShadow height="121.81" radius="58.182500000000005" width="112.92" />
+                     </effect>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="save_btn" buttonType="RAISED" layoutX="351.0" layoutY="517.0" onAction="#handleSaveButton" opacity="0.78" prefHeight="30.0" prefWidth="201.0" style="-fx-background-color: A17B3F;" text="Save Changes" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
