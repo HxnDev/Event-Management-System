@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.payment_Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="132.0" layoutY="897.0" opacity="0.78" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@images/payment.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="310.0" layoutY="-29.0" style="-fx-font-size: 120; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="Checkout" textFill="WHITE" AnchorPane.topAnchor="-29.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <JFXButton fx:id="exit_btn" onAction="#handleExitButton" buttonType="RAISED" layoutX="840.0" layoutY="19.0" ripplerFill="#d0d0d0" text="X" textFill="WHITE" AnchorPane.topAnchor="20.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="162.0" layoutY="546.0" ripplerFill="#d0d0d0" text="Privacy Policy" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="310.0" layoutY="546.0" ripplerFill="#d0d0d0" text="Terms of Use" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="547.0" ripplerFill="#d0d0d0" text="About Us" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="535.0" layoutY="555.0" text="© 2020 All Rights Reserved" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="save_btn" onAction="#handleSaveButton" buttonType="RAISED" layoutX="346.0" layoutY="517.0" prefHeight="30.0" prefWidth="201.0" style="-fx-background-color: A17B3F;" text="Save Changes" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <AnchorPane layoutX="474.0" layoutY="165.0" prefHeight="271.0" prefWidth="270.0" rotate="-1.5" style="-fx-background-color: transparent;">
+         <children>
+            <Label layoutX="9.0" layoutY="-9.0" style="-fx-font-size: 35;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="Thank You for Booking with Us" />
+            <JFXRadioButton fx:id="easypaisa" layoutX="16.0" layoutY="104.0" style="-jfx-unselected-color: black; -jfx-selected-color: MediumSpringGreen;" text="Easy Paisa">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="card" layoutX="16.0" layoutY="74.0" style="-jfx-unselected-color: black; -jfx-selected-color: MediumSpringGreen;" text="Credit/Debit Card">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="jazzcash" layoutX="16.0" layoutY="136.0" style="-jfx-unselected-color: black; -jfx-selected-color: MediumSpringGreen;" text="Jazz Cash">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXTextField fx:id="cardNo" focusColor="#00ff8c" layoutX="15.0" layoutY="171.0" prefHeight="25.0" prefWidth="242.0" promptText="Enter Card Number" style="-fx-prompt-text-fill: black; -fx-text-fill: black;" unFocusColor="BLACK" />
+            <JFXTextField fx:id="cardPin" focusColor="#00ff8c" layoutX="14.0" layoutY="210.0" prefHeight="25.0" prefWidth="242.0" promptText="Enter Card Pin" style="-fx-prompt-text-fill: black; -fx-text-fill: black;" unFocusColor="BLACK" />
+            <JFXTextField fx:id="mobile" focusColor="#00ff8c" layoutX="13.0" layoutY="255.0" prefHeight="25.0" prefWidth="242.0" promptText="Enter Mobile Number" style="-fx-prompt-text-fill: black; -fx-text-fill: black;" unFocusColor="BLACK" />
+            <JFXTextField fx:id="netTotal" focusColor="#00ff8c" layoutX="77.0" layoutY="44.0" prefHeight="25.0" prefWidth="178.0" promptText="Net Total" style="-fx-prompt-text-fill: black; -fx-text-fill: black;" unFocusColor="BLACK" />
+            <Label layoutX="17.0" layoutY="36.0" text="Net Total:" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
