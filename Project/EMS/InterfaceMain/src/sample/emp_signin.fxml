@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="600.0" prefWidth="900.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.emp_signin_Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="-1.0" opacity="0.56" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@images/Employee_Sign_In.jpg" />
+               </image></ImageView>
+            <JFXButton buttonType="RAISED" layoutX="449.0" layoutY="27.0" ripplerFill="#d0d0d0" text="Sign in" textFill="WHITE" AnchorPane.topAnchor="20.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="593.0" layoutY="20.0" ripplerFill="#d0d0d0" text="Reviews" textFill="WHITE" AnchorPane.topAnchor="20.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="738.0" layoutY="20.0" ripplerFill="#d0d0d0" text="Contact" textFill="WHITE" AnchorPane.rightAnchor="71.0" AnchorPane.topAnchor="20.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="152.0" layoutY="536.0" ripplerFill="#d0d0d0" text="Privacy Policy" textFill="WHITE" AnchorPane.bottomAnchor="20.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="300.0" layoutY="536.0" ripplerFill="#d0d0d0" text="Terms of Use" textFill="WHITE" AnchorPane.bottomAnchor="20.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="40.0" layoutY="522.0" ripplerFill="#d0d0d0" text="About Us" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="40.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="exit_btn" onAction="#handleExitButton" buttonType="RAISED" layoutX="840.0" layoutY="19.0" ripplerFill="#d0d0d0" text="X" textFill="WHITE" AnchorPane.topAnchor="20.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="449.0" layoutY="84.0" prefHeight="467.0" prefWidth="380.0">
+               <children>
+                  <JFXTextField fx:id="emp_id" focusColor="MEDIUMSPRINGGREEN" layoutX="40.0" layoutY="190.0" prefHeight="42.0" prefWidth="300.0" promptText="Employee ID/Email" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="emp_pass" focusColor="MEDIUMSPRINGGREEN" layoutX="40.0" layoutY="268.0" prefHeight="42.0" prefWidth="300.0" promptText="Password" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXTextField>
+                  <Label layoutX="153.0" layoutY="115.0" text="Sign in" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <JFXButton fx:id="signin_btn" onAction="#handleSignInButton" buttonType="RAISED" layoutX="40.0" layoutY="334.0" opacity="0.78" prefHeight="26.0" prefWidth="300.0" style="-fx-background-color: A17B3F;" text="sign in" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXButton>
+                  <Hyperlink layoutX="119.0" layoutY="381.0" text="Forgot Password ?" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Hyperlink>
+                  <Label alignment="CENTER" layoutX="119.0" layoutY="129.0" text="Employee" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe Script" size="29.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <JFXRadioButton fx:id="mgr_btn" layoutX="40.0" layoutY="241.0" style="-jfx-unselected-color: White; -jfx-selected-color: MediumSpringGreen;" text="Manager" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXRadioButton>
+               </children>
+            </AnchorPane>
+            <Label layoutX="100.0" layoutY="273.0" style="-fx-font-size: 40;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="A.S.H EVENTS" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="58.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="132.0" layoutY="314.0" style="-fx-font-size: 24;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your Dreams" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect></Label>
+            <Label layoutX="525.0" layoutY="545.0" text="© 2020 All Rights Reserved" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
