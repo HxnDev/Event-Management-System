@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mgr_edit_emp_Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="424.0" prefWidth="643.0" style="-fx-background-color: black;">
+            <children>
+                <ImageView fitHeight="450.0" fitWidth="643.0" opacity="0.64" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <image>
+                        <Image url="@images/img_empbg.jpg" />
+                    </image></ImageView>
+                <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="404.0" style="-fx-background-color: transparent;" text="About Us" textFill="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" layoutX="103.0" layoutY="404.0" style="-fx-background-color: transparent;" text="Privacy Policy" textFill="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </JFXButton>
+                <JFXButton fx:id="exit_btn" buttonType="RAISED" layoutX="600.0" layoutY="16.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE" onAction="#handleExitButton">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font name="Arial Black" size="12.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" layoutX="210.0" layoutY="404.0" style="-fx-background-color: transparent;" text="Terms of Use" textFill="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </JFXButton>
+                <JFXTextField fx:id="fname" focusColor="WHITE" layoutX="31.0" layoutY="96.0" pickOnBounds="false" prefHeight="25.0" prefWidth="148.0" promptText="First Name" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect></JFXTextField>
+                <JFXTextField fx:id="lname" focusColor="WHITE" layoutX="201.0" layoutY="96.0" pickOnBounds="false" prefHeight="25.0" prefWidth="148.0" promptText="Last Name" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect></JFXTextField>
+                <JFXTextField fx:id="cnic" focusColor="WHITE" layoutX="31.0" layoutY="152.0" pickOnBounds="false" prefHeight="25.0" prefWidth="148.0" promptText="CNIC" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </JFXTextField>
+                <JFXTextField fx:id="accountno" focusColor="WHITE" layoutX="31.0" layoutY="208.0" pickOnBounds="false" prefHeight="25.0" prefWidth="148.0" promptText="Account Number" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </JFXTextField>
+                <JFXTextField fx:id="email" focusColor="WHITE" layoutX="201.0" layoutY="208.0" pickOnBounds="false" prefHeight="25.0" prefWidth="148.0" promptText="Email Address" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </JFXTextField>
+                <JFXButton fx:id="save_btn" buttonType="RAISED" layoutX="111.0" layoutY="324.0" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: Crimson;" text="Save Changes" textFill="WHITE" onAction="#handleSaveButton">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </JFXButton>
+                <Label layoutX="226.0" layoutY="23.0" text="Edit Employee Info" textFill="WHITE">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Label>
+                <Text fill="WHITE" layoutX="427.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2020 All Rights Reserved">
+                    <effect>
+                        <DropShadow />
+                    </effect></Text>
+                <JFXTextField fx:id="dob" focusColor="WHITE" layoutX="201.0" layoutY="155.0" prefHeight="25.0" prefWidth="157.0" promptText="Date of Birth" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </JFXTextField>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="404.0" layoutY="184.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-fill: transparent;" width="200.0" />
+                <JFXTextField fx:id="points" alignment="CENTER" focusColor="MEDIUMSPRINGGREEN" layoutX="432.0" layoutY="196.0" pickOnBounds="false" promptText="Points" style="-fx-prompt-text-fill: white; -fx-text-fill: white;">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font name="Arial Black" size="12.0" />
+                    </font>
+                </JFXTextField>
+                <Label alignment="CENTER" layoutX="394.0" layoutY="176.0" prefHeight="17.0" prefWidth="95.0" style="-fx-background-color: E2DED2;" text="Employee Points">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Label>
+
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
