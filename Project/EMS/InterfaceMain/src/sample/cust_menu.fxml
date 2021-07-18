@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="600.0" prefWidth="900.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.cust_menu_Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: black;">
+            <children>
+                <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="-1.0" opacity="0.56" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <image>
+                        <Image url="@images/Customer_Desktop.jpg" />
+                    </image></ImageView>
+                <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: transparent;">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#001325" height="350.0" layoutX="225.0" layoutY="146.0" opacity="0.61" stroke="BLACK" strokeType="INSIDE" width="450.0" AnchorPane.leftAnchor="225.0" AnchorPane.topAnchor="146.0">
+                            <effect>
+                                <DropShadow />
+                            </effect></Rectangle>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d7d7d7" height="300.0" layoutX="250.0" layoutY="171.0" opacity="0.68" stroke="BLACK" strokeType="INSIDE" width="400.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="171.0">
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Rectangle>
+                        <Label layoutX="278.0" layoutY="176.0" opacity="0.32" style="-fx-font-size: 25;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="A.S.H EVENTS" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Light" size="58.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="310.0" layoutY="200.0" opacity="0.32" style="-fx-font-size: 12;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your Dreams" textFill="WHITE" />
+                        <Label layoutX="278.0" layoutY="237.0" opacity="0.32" style="-fx-font-size: 25;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="A.S.H EVENTS" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Light" size="58.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="310.0" layoutY="261.0" opacity="0.32" style="-fx-font-size: 12;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your Dreams" textFill="WHITE" />
+                        <Label layoutX="278.0" layoutY="296.0" opacity="0.32" style="-fx-font-size: 25;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="A.S.H EVENTS" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Light" size="58.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="310.0" layoutY="320.0" opacity="0.32" style="-fx-font-size: 12;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your Dreams" textFill="WHITE" />
+                        <Label layoutX="278.0" layoutY="355.0" opacity="0.32" style="-fx-font-size: 25;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="A.S.H EVENTS" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Light" size="58.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="310.0" layoutY="379.0" opacity="0.32" style="-fx-font-size: 12;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your Dreams" textFill="WHITE" />
+                        <Label layoutX="279.0" layoutY="411.0" opacity="0.32" style="-fx-font-size: 25;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="A.S.H EVENTS" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Light" size="58.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="311.0" layoutY="435.0" opacity="0.32" style="-fx-font-size: 12;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your Dreams" textFill="WHITE" />
+                        <Label layoutX="474.0" layoutY="196.0" opacity="0.32" style="-fx-font-size: 25;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="A.S.H EVENTS" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Light" size="58.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="506.0" layoutY="220.0" opacity="0.32" style="-fx-font-size: 12;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your Dreams" textFill="WHITE" />
+                        <Label layoutX="474.0" layoutY="257.0" opacity="0.32" style="-fx-font-size: 25;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="A.S.H EVENTS" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Light" size="58.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="506.0" layoutY="281.0" opacity="0.32" style="-fx-font-size: 12;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your Dreams" textFill="WHITE" />
+                        <Label layoutX="474.0" layoutY="316.0" opacity="0.32" style="-fx-font-size: 25;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="A.S.H EVENTS" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Light" size="58.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="506.0" layoutY="340.0" opacity="0.32" style="-fx-font-size: 12;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your Dreams" textFill="WHITE" />
+                        <Label layoutX="474.0" layoutY="375.0" opacity="0.32" style="-fx-font-size: 25;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="A.S.H EVENTS" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Light" size="58.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="506.0" layoutY="399.0" opacity="0.32" style="-fx-font-size: 12;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your Dreams" textFill="WHITE" />
+                        <Label layoutX="475.0" layoutY="431.0" opacity="0.32" style="-fx-font-size: 25;" styleClass="Julius" stylesheets="@css/Text_Style.css" text="A.S.H EVENTS" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Light" size="58.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="507.0" layoutY="455.0" opacity="0.32" style="-fx-font-size: 12;" styleClass="Archivo" stylesheets="@css/Text_Style.css" text="Planning Your Dreams" textFill="WHITE" />
+                        <JFXButton fx:id="signout_btn" onAction="#handleSignOutButton" buttonType="RAISED" layoutX="288.0" layoutY="420.0" opacity="0.84" prefHeight="30.0" prefWidth="320.0" style="-fx-background-color: A17B3F;" text="sign out" textFill="WHITE">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </JFXButton>
+                        <JFXButton fx:id="bookEvent_btn" onAction="#handleBookButton" buttonType="RAISED" layoutX="290.0" layoutY="205.0" opacity="0.84" prefHeight="30.0" prefWidth="320.0" style="-fx-background-color: A17B3F;" text="book event" textFill="WHITE">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </JFXButton>
+                        <JFXButton fx:id="viewEvent_btn" onAction="#handleViewButton" buttonType="RAISED" layoutX="290.0" layoutY="306.0" opacity="0.84" prefHeight="30.0" prefWidth="320.0" style="-fx-background-color: A17B3F;" text="view current event" textFill="WHITE">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </JFXButton>
+                        <JFXButton fx:id="edit_btn" onAction="#handleEditButton" buttonType="RAISED" layoutX="290.0" layoutY="376.0" opacity="0.84" prefHeight="30.0" prefWidth="320.0" style="-fx-background-color: #ffefcb;" text="edit information" textFill="#644b27">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </JFXButton>
+                    </children>
+                </AnchorPane>
+                <JFXButton buttonType="RAISED" layoutX="152.0" layoutY="536.0" ripplerFill="#d0d0d0" text="Privacy Policy" textFill="WHITE" AnchorPane.bottomAnchor="20.0">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" layoutX="300.0" layoutY="536.0" ripplerFill="#d0d0d0" text="Terms of Use" textFill="WHITE" AnchorPane.bottomAnchor="20.0">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" layoutX="40.0" layoutY="522.0" ripplerFill="#d0d0d0" text="About Us" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="40.0">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="526.0" layoutY="545.0" text="© 2020 All Rights Reserved" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Label>
+                <Label fx:id="welcome" layoutX="275.0" layoutY="24.0" style="-fx-font-size: 80;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="Welcome Customer" textFill="WHITE" AnchorPane.topAnchor="20.0">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
