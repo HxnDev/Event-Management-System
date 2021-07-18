@@ -1,0 +1,47 @@
+/*Design the Fonts*/
+.Julius{
+    -fx-font-family: "Julius Sans One";
+}
+
+.Archivo{
+    -fx-font-family: "Archivo Narrow Regular";
+}
+
+.Alif{
+    -fx-font-family: "Alifiyah";
+}
+
+.Honey{
+    -fx-font-family: "Honeymoon Avenue Script";
+}
+
+/*Design the Date Picker*/
+
+.date-picker-popup:editable .arrow-button .arrow{
+    -fx-background-color: white;
+}
+.date-picker-popup:editable .date-picker-display-node{
+
+    -fx-background-color:transparent;
+    -fx-border-width: 1;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;
+    -fx-font-size: 17px;
+}
+
+.date-picker-popup:editable .arrow-button{
+    -fx-background-color: transparent;
+    -fx-border-width: 1;
+    -fx-border-color: white;
+}
+
+.date-picker-popup:editable .arrow-button .arrow{
+    -fx-scale-x: 2px;
+    -fx-scale-y: 2px;
+}
+
+/*Colour Gradient Property*/
+.Gradient-Color{
+    -fx-background-color:linear-gradient(to bottom, transparent , yellow);
+}
