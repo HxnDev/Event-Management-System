@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="600.0" prefWidth="900.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mgr_view_events_Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: black;" stylesheets="@css/Table_Style.css">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="900.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Manager_View_All_Events.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="600.0" layoutX="-6.0" layoutY="1.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: black;" width="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <JFXButton fx:id="exit_btn" buttonType="RAISED" layoutX="740.0" layoutY="52.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" onAction="#handleExitButton">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="view_btn" buttonType="RAISED" layoutX="244.0" layoutY="518.0" onAction="#handleViewButton" opacity="0.72" prefHeight="25.0" prefWidth="150.0" ripplerFill="#a4a4a4" style="-fx-background-color: #00ffa2;" text="View Event" textFill="#2c0000">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <Label layoutX="508.0" layoutY="144.0" text="Search" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="Text_Searchbar" alignment="CENTER" focusColor="#00ffa2" layoutX="558.0" layoutY="139.0" prefHeight="27.0" prefWidth="279.0" promptText="Emp ID, First Name, Last Name, Wage Rate" style="-fx-prompt-text-fill: white; -fx-text-fill: white; -fx-border-color: white;" unFocusColor="WHITE" AnchorPane.rightAnchor="63.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <TableView fx:id="MainTable" editable="true" layoutX="157.0" layoutY="171.0" prefHeight="320.0" prefWidth="800.0" styleClass="virtual-flow" stylesheets="@css/Text_Style.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+               <columns>
+                  <TableColumn fx:id="event_id" prefWidth="100.0" text="ID" />
+                  <TableColumn fx:id="event_name" prefWidth="100.0" text="Name" />
+                  <TableColumn fx:id="event_type" prefWidth="100.0" text="Type" />
+                  <TableColumn fx:id="event_date" prefWidth="100.0" text="Date" />
+                  <TableColumn fx:id="event_guests" prefWidth="100.0" text="Guests Expected" />
+                  <TableColumn fx:id="event_price" prefWidth="100.0" text="Price" />
+                  <TableColumn prefWidth="100.0" text="Timings">
+                     <columns>
+                        <TableColumn fx:id="event_start" prefWidth="100.0" text="Start" />
+                        <TableColumn fx:id="event_end" prefWidth="100.0" text="End" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn fx:id="event_approved" prefWidth="100.0" text="Approved" />
+               </columns>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TableView>
+            <JFXTextField fx:id="selectedEventID" alignment="CENTER" focusColor="#00ffa2" layoutX="50.0" layoutY="518.0" prefHeight="25.0" prefWidth="150.0" promptText="Event ID" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="50.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXTextField>
+            <JFXButton fx:id="delete_btn" buttonType="RAISED" layoutX="700.0" layoutY="518.0" onAction="#handleDeleteButton" opacity="0.72" prefWidth="150.0" ripplerFill="#a4a4a4" style="-fx-background-color: #00ffa2;" text="Delete Event" textFill="#2c0000" AnchorPane.rightAnchor="50.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="approve_btn" buttonType="RAISED" layoutX="462.0" layoutY="518.0" onAction="#handleApproveButton" opacity="0.72" prefWidth="150.0" ripplerFill="#a4a4a4" style="-fx-background-color: #00ffa2;" text="Approve Event" textFill="#2c0000">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <Label layoutX="270.0" layoutY="20.0" style="-fx-font-size: 100; -fx-effect: DropShadow;" styleClass="Honey" stylesheets="@css/Text_Style.css" text="View Events" textFill="WHITE" AnchorPane.topAnchor="20.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="162.0" layoutY="546.0" ripplerFill="#d0d0d0" text="Privacy Policy" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="310.0" layoutY="546.0" ripplerFill="#d0d0d0" text="Terms of Use" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="546.0" ripplerFill="#d0d0d0" text="About Us" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="535.0" layoutY="555.0" text="© 2020 All Rights Reserved" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
