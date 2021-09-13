@@ -49,5 +49,9 @@ Some of the following instructions are specific to IntelliJ, as that was what we
 
 - Run project and enjoy :)
 
+## Interface:
+
+![Alt Text](https://github.com/HxnDev/Event-Management-System/blob/main/EMS.gif)
+
 ## Contact Info:
 For further queries contact me at : chhxnshah@gmail.com
