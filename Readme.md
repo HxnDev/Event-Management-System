@@ -3,7 +3,7 @@
 ## Contributors: 
 As this was a team project, hence the contributers are:
 
-[Sana Ali](https://github.com/sanaa-khan)
+[Sana Khan](https://github.com/sanaa-khan)
 
 [Abeera Fatima](https://github.com/ninjacarrot)
 
